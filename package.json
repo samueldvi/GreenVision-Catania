@@ -1,0 +1,30 @@
+{
+  "name": "greenvision-catania",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "better-sqlite3": "^11.10.0",
+    "body-parser": "^2.2.0",
+    "chart.js": "^4.4.9",
+    "cors": "^2.8.5",
+    "dotenv": "^16.5.0",
+    "express": "^5.1.0",
+    "pdfkit": "^0.17.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/samueldvi/GreenVision-Catania.git"
+  },
+  "bugs": {
+    "url": "https://github.com/samueldvi/GreenVision-Catania/issues"
+  },
+  "homepage": "https://github.com/samueldvi/GreenVision-Catania#readme",
+  "description": ""
+}

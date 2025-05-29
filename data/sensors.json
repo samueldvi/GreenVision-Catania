@@ -1,0 +1,5 @@
+[
+  { "id": 1, "lat": 37.507, "lng": 15.083, "tipo": "Umidità", "valore": 24 },
+  { "id": 2, "lat": 37.5071, "lng": 15.0825, "tipo": "Temperatura", "valore": 36.2 },
+  { "id": 3, "lat": 37.5072, "lng": 15.0835, "tipo": "Qualità Aria", "valore": 72 }
+]

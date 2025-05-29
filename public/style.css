@@ -1,0 +1,11 @@
+body {
+  font-family: Arial;
+  margin: 0;
+  padding: 0;
+}
+#map {
+  height: 80vh;
+}
+ul {
+  padding-left: 20px;
+}

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <title>GreenVision DSS</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css"/>
+</head>
+<body>
+  <h1>GreenVision Catania – DSS Ambientale</h1>
+  <div id="map"></div>
+  <h2>Azioni suggerite (DSS)</h2>
+  <ul id="dss-list"></ul>
+  <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f4f4f4;
+  }
+  h1 {
+    text-align: center;
+    color: #333;
+  }
+  #map {
+    height: 500px;
+    margin-bottom: 20px;
+  }
+  h2 {
+    color: #555;
+  }
+  ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  li {
+    background-color: #fff;
+  
+    margin: 5px 0;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  }
+  li:hover {
+    background-color: #e9ecef;
+  }
+</style>
+  <h2>Grafici Ambientali</h2>
+  <canvas id="sensorChart" width="400" height="200"></canvas>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<h2>Storico sensori</h2>
+<table border="1" id="storico">
+  <tr><th>Tipo</th><th>Valore</th><th>Ora</th></tr>
+</table>
+<p><a href="/report.pdf" target="_blank">Scarica report PDF</a></p>
+
+<h2>Segnalazione cittadina</h2>
+<form id="formSegnalazione">
+  <input name="nome" placeholder="Il tuo nome" required><br>
+  <input name="zona" placeholder="Zona segnalata" required><br>
+  <textarea name="messaggio" placeholder="Descrivi il problema" required></textarea><br>
+  <button type="submit">Invia</button>
+</form>
